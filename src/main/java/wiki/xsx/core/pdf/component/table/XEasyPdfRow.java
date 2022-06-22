@@ -157,6 +157,18 @@ public class XEasyPdfRow implements Serializable {
         return this;
     }
 
+
+    /**
+     * 设置表格行的最小行高
+     * 
+     * @param minHeight 最小行高
+     * @return 返回表格行组件
+     */
+    public XEasyPdfRow setMinHeight(Float minHeight) {
+        this.param.setMinHeight(minHeight);
+        return this;
+    }
+
     /**
      * 设置左边距
      * @param margin 边距
