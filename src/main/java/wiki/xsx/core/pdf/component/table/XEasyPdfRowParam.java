@@ -215,7 +215,7 @@ class XEasyPdfRowParam implements Serializable {
                 rowHeight = Math.max(rowHeight, cell.init(document, page, row));
             }
             // 不能低于最小行高
-            if (this.minHeight==null) {
+            if (this.minHeight!=null) {
                 rowHeight = Math.max(rowHeight, this.minHeight);
             }
             // 如果行高未初始化，则进行初始化
