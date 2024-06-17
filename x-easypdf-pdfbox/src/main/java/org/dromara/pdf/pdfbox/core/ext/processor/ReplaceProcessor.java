@@ -75,7 +75,7 @@ public class ReplaceProcessor extends AbstractProcessor {
             // 遍历页面索引
             for (int pageIndex : pageIndexes) {
                 // 替换文本
-                this.replaceText(pageTree.get(pageIndex), font, replaceMap);
+                this.replaceText(pageTree.get(pageIndex - 1), font, replaceMap);
             }
         } else {
             // 遍历页面树
